@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Active Volunteers">
+        <template if:true={volunteers}>
+            <lightning-datatable
+                key-field="id"
+                data={volunteers}
+                columns={columns}>
+            </lightning-datatable>
+        </template>
+        <template if:true={error}>
+            <c-error-panel errors={error}></c-error-panel>
+        </template>
+    </lightning-card>
+</template>

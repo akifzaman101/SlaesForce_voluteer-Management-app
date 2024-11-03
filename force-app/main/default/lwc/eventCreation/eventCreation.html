@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Create Event">
+        <lightning-input label="Event Name" value={eventName} onchange={handleNameChange}></lightning-input>
+        <lightning-input label="Date" type="datetime" value={eventDate} onchange={handleDateChange}></lightning-input>
+        <lightning-input label="Location" value={eventLocation} onchange={handleLocationChange}></lightning-input>
+        <lightning-input label="Max Attendees" type="number" value={maxAttendees} onchange={handleMaxAttendeesChange}></lightning-input>
+        <lightning-button label="Create Event" onclick={handleCreateEvent}></lightning-button>
+    </lightning-card>
+</template>

@@ -1,0 +1,7 @@
+<template>
+    <lightning-card title="Register Volunteer for Event">
+        <lightning-combobox label="Select Volunteer" value={selectedVolunteer} options={volunteerOptions} onchange={handleVolunteerChange}></lightning-combobox>
+        <lightning-combobox label="Select Event" value={selectedEvent} options={eventOptions} onchange={handleEventChange}></lightning-combobox>
+        <lightning-button label="Register" onclick={handleRegister}></lightning-button>
+    </lightning-card>
+</template>
